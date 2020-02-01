@@ -6,27 +6,25 @@ using UnityEngine.InputSystem;
 
 public class PlayerHandler : MonoBehaviour
 {
+   public GameObject planetCenter;
+   public float distanceFromPlanet;
+
     public float speed;
     Vector2 moveDirection;
-    Vector2 aimDirection;
+
+    private void Start()
+    {
+        this.transform.position -= new Vector3(0, 0, distanceFromPlanet);
+    }
 
     private void Update()
     {
-        this.transform.position += new Vector3(moveDirection.x,0, moveDirection.y) * speed *  Time.deltaTime;
+        planetCenter.transform.Rotate(new Vector3(moveDirection.y, moveDirection.x, 0));
     }
 
     private void OnMove(InputValue value)
     {
         moveDirection = value.Get<Vector2>();
-    }
-
-    private void OnAim(InputValue value)
-    {
-        if (value.Get<Vector2>().magnitude > 0.75)
-        {
-            aimDirection = value.Get<Vector2>();
-            this.transform.rotation = Quaternion.LookRotation(new Vector3(aimDirection.x, 0, aimDirection.y));
-        }
     }
 
     private void OnFire()
