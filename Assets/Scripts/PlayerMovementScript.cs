@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovementScript : MonoBehaviour {
 
     public float moveSpeed;
+    public float playerRotateSpeed = 5;
 
     private Vector3 moveDirection;
 
@@ -25,5 +26,11 @@ public class PlayerMovementScript : MonoBehaviour {
     void FixedUpdate()
     {
         GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime);
+
+        if (new Vector2(Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical")).magnitude > 0.5f)
+        {
+            float heading = Mathf.Atan2(-Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical"));
+            GameObject.Find("Player_PH").transform.localRotation = Quaternion.Lerp(GameObject.Find("Player_PH").transform.localRotation,Quaternion.Euler(0, heading * Mathf.Rad2Deg, 0),Time.smoothDeltaTime * playerRotateSpeed);
+        }
     }
 }
