@@ -7,7 +7,7 @@ public class PlanetPiecePlacer : MonoBehaviour
     public List<GameObject> planetPiecePrefabs;
     public float pieceScale = 0.2f;
 
-    public float yOffset = 0;
+    public float distanceFromPlanet = 0;
 
     GameObject piece = null;
 
@@ -20,7 +20,8 @@ public class PlanetPiecePlacer : MonoBehaviour
 
     public void Update()
     {
-        piece.transform.position = this.transform.position;
-        piece.transform.rotation = this.transform.rotation;
+        //piece.transform.position = (this.transform.position - GameObject.Find("PlanetPrefab").transform.position).normalized * distanceFromPlanet;
+        //piece.transform.position = this.transform.position;
+        //piece.transform.rotation = this.transform.rotation;
     }
 }

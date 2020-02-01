@@ -11,6 +11,15 @@ public class PlayerMovementScript : MonoBehaviour {
     void Update()
     {
         moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
+
+        if(moveDirection.magnitude > 0)
+        {
+            this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 1,Time.deltaTime*5);
+        }
+        else
+        {
+            this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 0, Time.deltaTime*5);
+        }
     }
 
     void FixedUpdate()
