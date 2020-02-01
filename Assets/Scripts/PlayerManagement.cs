@@ -39,7 +39,7 @@ public class PlayerManagement : MonoBehaviour
         else
         {
             takingToolTimer = 3;
-            // transform.GetChild(1).GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            transform.GetChild(1).GetChild(0).GetComponent<Image>().enabled = false;
             transform.GetChild(1).GetChild(0).rotation = Quaternion.identity;
         }
 
@@ -93,7 +93,7 @@ public class PlayerManagement : MonoBehaviour
             print ("Water near");
             waterNear = true;
         } 
-        else if (other.CompareTag("NeedsWater"))
+        else if (other.CompareTag("NeedsWater") && other.GetComponent<Item>().hasBeenDestroyed)
         {
             print ("Broken near");
             needsWaterNear = true;

@@ -8,6 +8,8 @@ public class Destruction : MonoBehaviour
     public GameObject world;
     public GameObject cube;
 
+    public List<GameObject> destructableThings = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,5 +45,22 @@ public class Destruction : MonoBehaviour
         cube.transform.position = world.GetComponent<Collider>().ClosestPoint(new Vector3(x, y, z));
 
         // With that point it searches the closest objective and then spawns whatever is able to destroy that element
+        float distance = 5000;
+        GameObject destroyedThing = null;
+        foreach (GameObject destructableThing in destructableThings)
+        {
+            if (!destructableThing.GetComponent<Item>().hasBeenDestroyed && Vector3.Distance(destructableThing.transform.position, transform.position) < distance)
+            {
+                destroyedThing = destructableThing;
+                distance = Vector3.Distance(destructableThing.transform.position, transform.position);
+            }
+        }
+
+        if (destroyedThing)
+        {
+            transform.position = destroyedThing.transform.position;
+            print (destroyedThing.name);
+            destroyedThing.GetComponent<Item>().hasBeenDestroyed = true;
+        }
     }
 }
