@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Broken
+  - Tool
+  - Water
+  - Wood
+  - Stone
+  - NeedsWood
+  - NeedsStone
+  - NeedsWater
   layers:
   - Default
   - TransparentFX
