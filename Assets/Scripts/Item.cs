@@ -20,16 +20,18 @@ public class Item : MonoBehaviour
         if (hasBeenDestroyed)
         {
             timeLeftToRepair -= Time.deltaTime;
-            gameManager.GetComponent<GameManager>().worldPopulation -= 1;
+            // if (timeLeftToRepair%5==0)
+            // {
+                gameManager.GetComponent<GameManager>().worldPopulation -= 1;
+            // }
             if (timeLeftToRepair < 0)
             {
                 gameManager.GetComponent<GameManager>().worldPopulation -= 1000;
             }
         }
-    }
-
-    void LostGame()
-    {
-        print ("You Lost");
+        else
+        {
+            timeLeftToRepair = 20;
+        }
     }
 }
