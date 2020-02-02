@@ -8,6 +8,9 @@ public class PlayerMovementScript : MonoBehaviour {
     public float playerRotateSpeed = 5;
 
     private Vector3 moveDirection;
+    private float heading;
+
+    
 
     void Update()
     {
@@ -27,10 +30,14 @@ public class PlayerMovementScript : MonoBehaviour {
     {
         GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.TransformDirection(moveDirection) * moveSpeed * Time.deltaTime);
 
-        if (new Vector2(Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical")).magnitude > 0.5f)
+        playerRotateSpeed = Mathf.Clamp( (new Vector2(Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical")).magnitude)*10 , 3.5f, 8.0f);
+
+        if (new Vector2(Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical")).magnitude > 0.1f)
         {
-            float heading = Mathf.Atan2(-Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical"));
-            GameObject.Find("Player_PH").transform.localRotation = Quaternion.Lerp(GameObject.Find("Player_PH").transform.localRotation,Quaternion.Euler(0, heading * Mathf.Rad2Deg, 0),Time.smoothDeltaTime * playerRotateSpeed);
+            heading = Mathf.Atan2(-Input.GetAxis("Horizontal"), -Input.GetAxis("Vertical"));
+            
         }
+        
+        GameObject.Find("Player_PH").transform.localRotation = Quaternion.Lerp(GameObject.Find("Player_PH").transform.localRotation, Quaternion.Euler(0, heading * Mathf.Rad2Deg, 0), Time.smoothDeltaTime * playerRotateSpeed);
     }
 }

@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class Start_Menu : MonoBehaviour
 {
-    public Canvas hud;
+    public Canvas hud, pauseMenu;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.GetComponent<Canvas>().enabled = true;
+        pauseMenu.gameObject.SetActive(false);
         hud.gameObject.SetActive(false);
         Time.timeScale = 0;
     }
@@ -20,11 +22,17 @@ public class Start_Menu : MonoBehaviour
         
     }
 
+ 
+        
+
+      
+
     public void StartGame()
     {
         Time.timeScale = 1;
         gameObject.SetActive(false);
         hud.gameObject.SetActive(true);
+        pauseMenu.gameObject.SetActive(true);
     }
 
     public void QuitGame ()
