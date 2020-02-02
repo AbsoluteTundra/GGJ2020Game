@@ -114,11 +114,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 4757101823151685053}
+  m_TargetGraphic: {fileID: 6289183254215643246}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2898541553877869802}
         m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
@@ -247,8 +247,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: StartGame
+      - m_Target: {fileID: 2898541553877869802}
+        m_MethodName: TogglePause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -449,11 +449,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1868472404174646767}
+  m_TargetGraphic: {fileID: 6289183254215643246}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2898541553877869802}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 5983897426328988464}
   - component: {fileID: 5983897426328988471}
   - component: {fileID: 5983897426328988470}
+  - component: {fileID: 2898541553877869802}
   m_Layer: 5
   m_Name: Pause Screen
   m_TagString: Untagged
@@ -565,6 +566,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2898541553877869802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5983897426328988468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d6b38e61e7fcf74ca6928ab2c831371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hud: {fileID: 0}
 --- !u!1 &7810669630908659393
 GameObject:
   m_ObjectHideFlags: 0
