@@ -34,6 +34,7 @@ public class PlayerManagement : MonoBehaviour
                 transform.GetChild(1).GetChild(0).rotation = Quaternion.Euler(0, 0, 0);
                 print ("Has tool");
                 toolsOwned.Add("Water");
+                GameObject.Find("PlayerModel").GetComponent<Animator>().Play("Gather_Water");
             }
         }
         else
@@ -55,6 +56,7 @@ public class PlayerManagement : MonoBehaviour
                 print ("Got repaired");
                 gameManager.GetComponent<GameManager>().numberOfRepairs += 1;
                 toolsOwned.Remove("Water");
+                GameObject.Find("PlayerModel").GetComponent<Animator>().Play("ReleaseWater");
             }
         }
 
