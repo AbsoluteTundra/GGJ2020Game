@@ -18,10 +18,12 @@ public class PlayerMovementScript : MonoBehaviour {
 
         if(moveDirection.magnitude > 0)
         {
+            GameObject.Find("PlayerModel").GetComponent<Animator>().Play("Fly");
             this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 1,Time.deltaTime*5);
         }
         else
         {
+            GameObject.Find("PlayerModel").GetComponent<Animator>().Play("Idle");
             this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 0, Time.deltaTime*5);
         }
     }
@@ -38,6 +40,6 @@ public class PlayerMovementScript : MonoBehaviour {
             
         }
         
-        GameObject.Find("Player_PH").transform.localRotation = Quaternion.Lerp(GameObject.Find("Player_PH").transform.localRotation, Quaternion.Euler(0, heading * Mathf.Rad2Deg, 0), Time.smoothDeltaTime * playerRotateSpeed);
+        GameObject.Find("PlayerModel").transform.localRotation = Quaternion.Lerp(GameObject.Find("PlayerModel").transform.localRotation, Quaternion.Euler(0, heading * Mathf.Rad2Deg, 0), Time.smoothDeltaTime * playerRotateSpeed);
     }
 }
