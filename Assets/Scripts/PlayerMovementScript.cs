@@ -18,12 +18,12 @@ public class PlayerMovementScript : MonoBehaviour {
 
         if(moveDirection.magnitude > 0)
         {
-            GameObject.Find("PlayerModel").GetComponent<Animator>().Play("Fly");
+            GameObject.Find("PlayerModel").GetComponent<Animator>().SetBool("isFlying", true);
             this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 1,Time.deltaTime*5);
         }
         else
         {
-            GameObject.Find("PlayerModel").GetComponent<Animator>().Play("Idle");
+            GameObject.Find("PlayerModel").GetComponent<Animator>().SetBool("isFlying", false);
             this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 0, Time.deltaTime*5);
         }
     }
