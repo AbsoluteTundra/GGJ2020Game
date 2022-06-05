@@ -7,6 +7,12 @@ public class Start_Menu : MonoBehaviour
 {
     public Canvas hud, pauseMenu;
 
+
+    public SpriteRenderer hud1;
+    public SpriteRenderer hud2;
+    public SpriteRenderer hud3;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,24 +21,16 @@ public class Start_Menu : MonoBehaviour
         hud.gameObject.SetActive(false);
         Time.timeScale = 0;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
- 
-        
-
-      
-
+    
     public void StartGame()
     {
         Time.timeScale = 1;
         gameObject.SetActive(false);
         hud.gameObject.SetActive(true);
         pauseMenu.gameObject.SetActive(true);
+        hud1.enabled = true;
+        hud2.enabled = true;
+        hud3.enabled = true;
     }
 
     public void QuitGame ()

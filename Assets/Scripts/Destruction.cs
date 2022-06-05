@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class Destruction : MonoBehaviour
 {
-    float timeLeft = 5;
+    float timeLeft = 10;
+    float destructionNumber = 0;
     public GameObject world;
     public GameObject cube;
 
     public List<GameObject> destructableThings = new List<GameObject>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public ParticleSystem thunder;
+    public ParticleSystem explosion;
+    public ParticleSystem meteor;
 
-    }
+    public List<GameObject> destroyedThings = new List<GameObject>();
+
+    public Sprite forest;
+    public Sprite fence;
+    public Sprite house;
 
     // Update is called once per frame
     void Update()
@@ -23,44 +28,78 @@ public class Destruction : MonoBehaviour
         if ( timeLeft < 0)
         {
             CreateDestruction();
-            timeLeft = 5;
+            destructionNumber += 1;
+            timeLeft = 10 - destructionNumber * 0.1f; 
         }
     }
 
     
     void CreateDestruction ()
     {
-        float x = 0;
-        float y = 0;
-        float z = 0;
-
-        // Selects a random point of the planet 
-        while (x < 500 && x > -500 || y < 500 && y > -500 || z < 500 && z > -500)
-        {
-            x = Random.Range(100000, -100000);
-            y = Random.Range(100000, -100000);
-            z = Random.Range(100000, -100000);
-        }
-
-        cube.transform.position = world.GetComponent<Collider>().ClosestPoint(new Vector3(x, y, z));
-
-        // With that point it searches the closest objective and then spawns whatever is able to destroy that element
-        float distance = 5000;
         GameObject destroyedThing = null;
-        foreach (GameObject destructableThing in destructableThings)
+        int index;
+        while (destroyedThing == null)
         {
-            if (!destructableThing.GetComponent<Item>().hasBeenDestroyed && Vector3.Distance(destructableThing.transform.position, transform.position) < distance)
+            index = Random.Range(0, destructableThings.Count);
+            if (!destructableThings[index].GetComponent<Item>().hasBeenDestroyed)
             {
-                destroyedThing = destructableThing;
-                distance = Vector3.Distance(destructableThing.transform.position, transform.position);
+                destroyedThing = destructableThings[index];
             }
         }
-
+        
         if (destroyedThing)
         {
+            destroyedThing.transform.GetComponent<AudioSource>().Play();
+            destroyedThing.transform.GetChild(2).GetComponentInChildren<ParticleSystem>().Play();
+            if (destroyedThing.transform.GetChild(1).CompareTag("NeedsWater"))
+            {
+                destroyedThing.transform.GetChild(3).GetComponent<meteor>().start = true;
+            }
+            foreach (Renderer r in destroyedThing.transform.GetChild(0).GetComponentsInChildren<Renderer>()) 
+            {
+               r.enabled = false;
+            }
+            foreach (Renderer r in destroyedThing.transform.GetChild(1).GetComponentsInChildren<Renderer>()) 
+            {
+                if (!r.transform.CompareTag("Highlight"))
+                    r.enabled = true;
+            }
+            foreach (Collider c in destroyedThing.transform.GetChild(1).GetComponentsInChildren<Collider>()) 
+            {
+                c.enabled = true;
+            }
             transform.position = destroyedThing.transform.position;
             print (destroyedThing.name);
             destroyedThing.GetComponent<Item>().hasBeenDestroyed = true;
+
+            int i= 0;
+            for (i= 0; i < destroyedThings.Count; i++)
+            {
+                if (destroyedThings[i].GetComponent<SpriteRenderer>().enabled == false)
+                {
+                    break;
+                }
+            }
+
+            if (i < destroyedThings.Count)
+            {
+                if (destroyedThing.transform.GetChild(1).CompareTag("NeedsWater"))
+                {
+                    destroyedThings[i].GetComponent<SpriteRenderer>().enabled = true;
+                    destroyedThings[i].GetComponent<SpriteRenderer>().sprite = forest;
+                }
+                else if (destroyedThing.transform.GetChild(1).CompareTag("NeedsWood"))
+                {
+                    destroyedThings[i].GetComponent<SpriteRenderer>().enabled = true;
+                    destroyedThings[i].GetComponent<SpriteRenderer>().sprite = fence;
+                }
+                else if (destroyedThing.transform.GetChild(1).CompareTag("NeedsStone"))
+                {
+                    destroyedThings[i].GetComponent<SpriteRenderer>().enabled = true;
+                    destroyedThings[i].GetComponent<SpriteRenderer>().sprite = house;
+                }
+            }
+
         }
     }
 }

@@ -10,7 +10,9 @@ public class PlayerMovementScript : MonoBehaviour {
     private Vector3 moveDirection;
     private float heading;
 
-    
+    public GameObject player;
+
+    public bool moving;
 
     void Update()
     {
@@ -18,12 +20,21 @@ public class PlayerMovementScript : MonoBehaviour {
 
         if(moveDirection.magnitude > 0)
         {
+<<<<<<< HEAD
+            player.GetComponent<Animator>().Play("Fly");
+=======
             GameObject.Find("PlayerModel").GetComponent<Animator>().SetBool("isFlying", true);
+>>>>>>> d59a43fcec3af6500e98c320f7fca14752f21fb8
             this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 1,Time.deltaTime*5);
+            moving = true;
         }
         else
         {
+<<<<<<< HEAD
+            moving = false;
+=======
             GameObject.Find("PlayerModel").GetComponent<Animator>().SetBool("isFlying", false);
+>>>>>>> d59a43fcec3af6500e98c320f7fca14752f21fb8
             this.GetComponent<AudioSource>().volume = Mathf.Lerp(this.GetComponent<AudioSource>().volume, 0, Time.deltaTime*5);
         }
     }
@@ -40,6 +51,10 @@ public class PlayerMovementScript : MonoBehaviour {
             
         }
         
+<<<<<<< HEAD
+        player.transform.localRotation = Quaternion.Lerp(player.transform.localRotation, Quaternion.Euler(0, heading * Mathf.Rad2Deg, 0), Time.smoothDeltaTime * playerRotateSpeed);
+=======
         GameObject.Find("PlayerModel").transform.localRotation = Quaternion.Lerp(GameObject.Find("PlayerModel").transform.localRotation, Quaternion.Euler(0, heading * Mathf.Rad2Deg, 0), Time.smoothDeltaTime * playerRotateSpeed);
+>>>>>>> d59a43fcec3af6500e98c320f7fca14752f21fb8
     }
 }

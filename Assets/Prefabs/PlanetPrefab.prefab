@@ -99,6 +99,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &139775238413136524
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +201,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &209433036736657637
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +261,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -374,6 +380,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &653408031959976970
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +440,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -509,7 +518,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -629,6 +638,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &1528242776192124469
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +739,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &1540845821511513924
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +841,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &1559695674418161343
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,7 +901,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1003,6 +1021,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &2117865531023396724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1081,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1138,7 +1159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1216,7 +1237,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1336,6 +1357,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &2607275170730709799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,7 +1417,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1512,6 +1536,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &2803036383325789843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,7 +1596,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1688,6 +1715,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &2846753196781693869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,6 +1816,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &3096459425156101861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1918,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &3159193717739523537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +1978,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2020,7 +2056,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2098,7 +2134,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2176,7 +2212,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2254,7 +2290,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2332,7 +2368,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2410,7 +2446,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2530,6 +2566,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &4735980239801974870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,7 +2626,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2707,6 +2746,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &4967857005600779115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,6 +2847,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &5016096485823805870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,6 +3011,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &5751465371462323317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3065,6 +3113,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &5782687370460052696
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3215,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &5825357673942049097
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,6 +3316,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &5887187504431491402
 GameObject:
   m_ObjectHideFlags: 0
@@ -3319,7 +3376,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3438,6 +3495,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &5985259994950484232
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,7 +3555,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3615,6 +3675,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &6125057849504972306
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,7 +3735,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3750,7 +3813,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3870,6 +3933,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &6583029014866414594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3927,7 +3993,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4047,6 +4113,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &6986757365977934191
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,7 +4173,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4182,7 +4251,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4301,6 +4370,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &7185618846955665764
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,6 +4471,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &7269521268534280670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4456,7 +4531,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4534,7 +4609,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4612,7 +4687,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4781,7 +4856,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4900,6 +4975,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &7677381335616688081
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,6 +5077,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &7711928704809392843
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,6 +5179,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &7768685826176516469
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,7 +5239,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5233,7 +5317,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5353,6 +5437,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &8571250021065136843
 GameObject:
   m_ObjectHideFlags: 0
@@ -5452,6 +5539,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &9000230276862602352
 GameObject:
   m_ObjectHideFlags: 0
@@ -5551,6 +5641,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &9097504395694769094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,7 +5701,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5727,6 +5820,9 @@ MonoBehaviour:
   - {fileID: -927199367670048503, guid: a80ef311b019bc94fbdc490fb87d1c3f, type: 3}
   pieceScale: 0.016
   distanceFromPlanet: 0
+  manager: {fileID: 0}
+  destruction: {fileID: 0}
+  hexagon: 0
 --- !u!1 &9185282789652313579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,7 +5880,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: c5ff85ac076aee14e9c0871a3467f7da, type: 3}
+  - {fileID: -205629353262513385, guid: 21d37b4de1aa34d4cba6c83cf19731fc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
